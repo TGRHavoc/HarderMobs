@@ -1,0 +1,31 @@
+main: me.TGRHavoc.HarderMobs.Main
+description: Creates harder mobs in Minecraft
+name: HarderMobs
+version: 2.0.0
+author: TGR_Havoc
+
+commands:
+    HarderMobs:
+        description: Show commands for HarderMobs
+        usage: /<command>
+        aliases: [hm, h, mobs]
+    HarderMobs on:
+       description: Turn HarderMobs on!
+       usage: /<command>
+       permission: HarderMobs.Admin
+       permission-message: You don't have <permission> to do /<command>
+    HarderMobs off:
+       description: Turn HarderMobs off!
+       usage: /<command>
+       permission: HarderMobs.Admin
+       permission-message: You don't have <permission> to do /<command>
+
+permissions:
+   HarderMobs.*:
+      description: All HarderMobs permissions
+      default: op
+      children:
+         HarderMobs.Admin: true
+   HarderMobs.Admin:
+      description: Use the admin commands
+      default: op

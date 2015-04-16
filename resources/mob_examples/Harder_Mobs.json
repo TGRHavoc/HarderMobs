@@ -1,0 +1,58 @@
+{
+    "__c__":"These are comments, they will be ignored. Use comments to explain attributes etc.",
+    "__c__":"Name of the modification (Will be displayed in minecraft after command)",
+    "name":"Harder Mobs",
+    
+    "description": "Makes the mobs harder to kill, also gives cool mods",
+    
+    "__c__" : "Chance that this mod will be applied to mobs specified below",
+    "chance" : 75,
+    
+    "__c__" : "Whether this is going to be applied or not",
+    "enabled" : true,
+    
+    "__c__" : "Mobs that this modification applies to, see: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/LivingEntity.html. Can be 'all' (Without quotes)",
+    "__c__" : "Required",
+    "mobs" : [
+        "all"
+    ],
+    
+    "__c__" : "Item types can be found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html. Case-insensitive",
+    "__c__" : "item can be 'random', this will get a random armour",
+    "armour" : {
+        "helmet": {
+            "name" : "&2Cool &7Helmet",
+            "item" : "random",
+            "drop_chance" : 100
+        },
+        "chestplate" : {
+            "name" : "&2Cool &7Chestplate",
+            "item" : "iron_chestplate",
+            "drop_chance" : 50
+        },
+        "leggins" : {
+            "name" : "&2Cool &7Leggins",
+            "item" : "chain_leggins",
+            "drop_chance" : 25
+        },
+        "boots" : {
+            "name" : "&2Cool &7Boots",
+            "item" : "LEATHER_boots",
+            "drop_chance" : 10
+        }
+    },
+    
+    "__c__" : "Weapon the mob will hold see: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html",
+    "weapon" : {
+        "name" : "&1Cool &aWeapon",
+        "type" : "random",
+        "drop_chance" : 100
+    },
+    
+    "__c__" : "Effects the mob is spawned with can be found: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html",
+    "effects" : [],
+    
+    "__c__" : "Effects that are applied to player when hit by this mob",
+    "attack_effects" : []
+    
+}

@@ -1,0 +1,81 @@
+{
+    "__c__":"These are comments, they will be ignored. Use comments to explain attributes etc.",
+    "__c__":"Name of the modification (Will be displayed in minecraft after command)",
+    "name":"Harder Skeletons",
+    
+    "description": "Makes the skeletons harder to kill, also gives cool mods",
+    
+    "__c__" : "Chance that this mod will be applied to mobs specified below",
+    "chance" : 50,
+    
+    "__c__" : "Whether this is going to be applied or not",
+    "enabled" : true,
+    
+    "__c__" : "Mobs that this modification applies to, see: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/LivingEntity.html. Can be 'all' (Without quotes)",
+    "__c__" : "Required",
+    "mobs" : [
+        "skeleton"
+    ],
+    
+    "__c__" : "Item types can be found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html. Case-insensitive",
+    "armour" : {
+        "helmet": {
+            "__c__" : "Name of the helmet, doesn't have to be set",
+            "name" : "&2Cool &7Helmet",
+            
+            "__c__" : "Item to put in this slot, must be set",
+            "item" : "LEATHER_HELMET",
+            
+            "__c__" : "Color will only work with leather armour see: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html",
+            "color" : "yellow",
+            
+            "__c__" : "Chance that this armour will have of dropping when mob wearing it is killed, out of 100. Must be set",
+            "drop_chance" : 100
+        },
+        "chestplate" : {
+            "name" : "&2Cool &7Chestplate",
+            "item" : "leather_chestplate",
+            "drop_chance" : 50
+        },
+        "leggins" : {
+            "name" : "&2Cool &7Leggins",
+            "item" : "LEATHER_leggins",
+            "drop_chance" : 25
+        },
+        "boots" : {
+            "name" : "&2Cool &7Boots",
+            "item" : "LEATHER_boots",
+            "drop_chance" : 10
+        }
+    },
+    
+    "__c__" : "Effects the mob is spawned with can be found: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html",
+    "effects" : [
+        {"type" : "speed", "amplifier":10}
+    ],
+    "__c__" : "Effects that are applied to player when hit by this mob",
+    "attack_effects" : [
+        {
+            "type" : "speed",
+            
+            "__c__" : "Duration is in seconds",
+            "duration" : 10,
+            
+            "amplifier" : 1,
+            
+            "__c__" : "Chance it will affect the player attacked",
+            "chance" : 100
+        },
+        {
+            "__c__" : "Random will pick a random effect (can be bad or good)",
+            "type" : "random",
+            
+            "__c__": "Parameters for amplifier (must have min and max for random effects)",
+            "amplifier_min" : 1,
+            "amplifier_max" : 255,
+            
+            "chance" : 50
+        }
+    ]
+    
+}
