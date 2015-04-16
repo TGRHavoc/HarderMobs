@@ -8,5 +8,10 @@
 *.war
 *.ear
 
+# Stuff I don't want/need to push to github #
+dist/
+.classpath
+.project
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
