@@ -31,8 +31,8 @@
             "drop_chance" : 50
         },
         "leggins" : {
-            "name" : "&2Cool &7Leggins",
-            "item" : "chain_leggins",
+            "name" : "&2Cool &7Leggings",
+            "item" : "chainmail_LEGGINGS",
             "drop_chance" : 25
         },
         "boots" : {
@@ -45,12 +45,12 @@
     "__c__" : "Weapon the mob will hold see: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html",
     "weapon" : {
         "name" : "&1Cool &aWeapon",
-        "type" : "random",
+        "item" : "random",
         "drop_chance" : 100
     },
     
     "__c__" : "Effects the mob is spawned with can be found: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html",
-    "effects" : [],
+    "spawn_effects" : [],
     
     "__c__" : "Effects that are applied to player when hit by this mob",
     "attack_effects" : []

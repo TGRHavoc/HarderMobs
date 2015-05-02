@@ -26,7 +26,7 @@
             "__c__" : "Item to put in this slot, must be set",
             "item" : "LEATHER_HELMET",
             
-            "__c__" : "Color will only work with leather armour see: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/DyeColor.html",
+            "__c__" : "Color will only work with leather armour see: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Color.html",
             "color" : "yellow",
             
             "__c__" : "Chance that this armour will have of dropping when mob wearing it is killed, out of 100. Must be set",
@@ -38,8 +38,8 @@
             "drop_chance" : 50
         },
         "leggins" : {
-            "name" : "&2Cool &7Leggins",
-            "item" : "LEATHER_leggins",
+            "name" : "&2Cool &7Leggings",
+            "item" : "LEATHER_LEGGINGS",
             "drop_chance" : 25
         },
         "boots" : {
@@ -50,8 +50,12 @@
     },
     
     "__c__" : "Effects the mob is spawned with can be found: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html",
-    "effects" : [
-        {"type" : "speed", "amplifier":10}
+    "__c__" : "These are automatically given the maximum duration value, this can be overriden by using the 'duration' attribute",
+    "spawn_effects" : [
+        {
+            "type" : "speed",
+            "amplifier":10
+        }
     ],
     "__c__" : "Effects that are applied to player when hit by this mob",
     "attack_effects" : [
